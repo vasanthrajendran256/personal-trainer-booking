@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop sports nutrition supplements at WARRIORS Nutrition Store.">
+    <title>WARRIORS | Supplements</title>
+
+    <!-- Shared website styles and supplement page styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="supplement.css">
+
+    <!-- Supplement page JavaScript -->
+    <script src="supplement.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ==============================
+         HEADER / NAVIGATION
+    =============================== -->
+    <header>
+         <nav class="navbar" style="gap: 50% ;max-width: 1400px;
+    min-height: 82px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                <img src="img/image.png" alt="WARRIORS Gym Logo">
+            </a>
+
+            <!-- NAVIGATION LINKS -->
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="booking.html">Booking</a>
+                <a href="equipments.html">Equipments</a>
+                <a href="supplement.html" class="active" aria-current="page">Supplements</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <!-- CART AND BOOKING -->
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn" type="button"
+                    aria-label="Open shopping cart">
+                    <img src="img/cart.png" alt="">
+                    <span id="cartCount">0</span>
+                </button>
+
+            </div>
+               <a href="https://vasanthrajendran256.github.io/calorie-calculator/" class="book-btn" target="_blank">
+                
+                <span>Calculate Calorie</span>
+            </a>
+
+            <!-- MOBILE MENU BUTTON -->
+             <div class="toggle" id="toggle">
+                <img src="img/list.png" alt="Open navigation menu">
+            </div>
+
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ==============================
+             HERO SECTION
+        =============================== -->
+        <section class="supplement-hero" id="home">
+
+            <div class="supplement-overlay"></div>
+
+            <div class="supplement-hero-content">
+
+                <p class="hero-tag">WARRIORS NUTRITION STORE</p>
+
+                <h1>
+                    FUEL YOUR<br>
+                    <span>PERFORMANCE.</span>
+                </h1>
+
+                <p>
+                    Discover quality sports nutrition products
+                    to support your strength, recovery and
+                    fitness journey.
+                </p>
+
+                <a href="#products" class="shop-btn">
+                    SHOP NOW →
+                </a>
+
+            </div>
+
+        </section>
+
+
+       
+        <section class="category-section">
+
+            <div class="section-heading">
+                <p>FIND YOUR NUTRITION</p>
+                <h2>SHOP BY <span>CATEGORY</span></h2>
+            </div>
+
+            <div class="category-grid">
+
+                <button class="category-card active"
+                    type="button" data-category="all" aria-pressed="true">
+                    <img src="supplement.img/all-products.png" alt="">
+                    <h3>All Products</h3>
+                </button>
+
+                <button class="category-card"
+                    type="button" data-category="protein" aria-pressed="false">
+                    <img src="supplement.img/protein.png" alt="">
+                    <h3>Protein</h3>
+                </button>
+
+                <button class="category-card"
+                    type="button" data-category="creatine" aria-pressed="false">
+                    <img src="supplement.img/creatine.png" alt="">
+                    <h3>Creatine</h3>
+                </button>
+
+                <button class="category-card"
+                    type="button" data-category="preworkout" aria-pressed="false">
+                    <img src="supplement.img/preworkout.png" alt="">
+                    <h3>Pre-Workout</h3>
+                </button>
+
+                <button class="category-card"
+                    type="button" data-category="massgainer" aria-pressed="false">
+                    <img src="supplement.img/massgainer.png" alt="">
+                    <h3>Mass Gainer</h3>
+                </button>
+
+                <button class="category-card"
+                    type="button" data-category="vitamins" aria-pressed="false">
+                    <img src="supplement.img/vitamins.png" alt="">
+                    <h3>Vitamins</h3>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             PRODUCTS SECTION
+        =============================== -->
+        <section class="products-section" id="products">
+
+            <div class="products-heading">
+
+                <div class="section-heading">
+                    <p>QUALITY SPORTS NUTRITION</p>
+                    <h2>OUR <span>PRODUCTS</span></h2>
+                </div>
+
+                <div class="sort-control">
+                    <label for="sortProducts">Sort:</label>
+                    <select id="sortProducts">
+                        <option value="default">Sort By</option>
+                        <option value="low">Price: Low to High</option>
+                        <option value="high">Price: High to Low</option>
+                        <option value="name">Name: A to Z</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT GRID -->
+            <div class="product-grid" id="productGrid">
+
+                <!-- PRODUCT 1 -->
+                <article class="product-card" data-category="protein">
+
+                    <div class="product-image">
+                        <span class="product-tag">POPULAR</span>
+                        <img src="supplement.img/whey-protein.png" alt="Whey Protein Powder">
+                    </div>
+
+                    <div class="product-info">
+                        <p>WHEY PROTEIN</p>
+                        <h3>Whey Protein Powder</h3>
+                        <span class="weight">1 KG</span>
+                        <h4>₹1,999</h4>
+
+                        <button class="add-cart" type="button"
+                            data-name="Whey Protein Powder" data-price="1999">
+                            ADD TO CART +
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 2 -->
+                <article class="product-card" data-category="creatine">
+
+                    <div class="product-image">
+                        <img src="supplement.img/creatine-product.png" alt="Creatine Monohydrate">
+                    </div>
+
+                    <div class="product-info">
+                        <p>CREATINE</p>
+                        <h3>Creatine Monohydrate</h3>
+                        <span class="weight">250 G</span>
+                        <h4>₹799</h4>
+
+                        <button class="add-cart" type="button"
+                            data-name="Creatine Monohydrate" data-price="799">
+                            ADD TO CART +
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 3 -->
+                <article class="product-card" data-category="massgainer">
+
+                    <div class="product-image">
+                        <span class="product-tag">BEST SELLER</span>
+                        <img src="supplement.img/mass-gainer.png" alt="Mass Gainer Powder">
+                    </div>
+
+                    <div class="product-info">
+                        <p>MASS GAINER</p>
+                        <h3>Mass Gainer Powder</h3>
+                        <span class="weight">1 KG</span>
+                        <h4>₹1,599</h4>
+
+                        <button class="add-cart" type="button"
+                            data-name="Mass Gainer Powder" data-price="1599">
+                            ADD TO CART +
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 4 -->
+                <article class="product-card" data-category="preworkout">
+
+                    <div class="product-image">
+                        <img src="supplement.img/pre-workout-product.png" alt="Pre Workout Formula">
+                    </div>
+
+                    <div class="product-info">
+                        <p>PRE-WORKOUT</p>
+                        <h3>Pre Workout Formula</h3>
+                        <span class="weight">300 G</span>
+                        <h4>₹1,099</h4>
+
+                        <button class="add-cart" type="button"
+                            data-name="Pre Workout Formula" data-price="1099">
+                            ADD TO CART +
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 5 -->
+                <article class="product-card" data-category="vitamins">
+
+                    <div class="product-image">
+                        <img src="supplement.img/vitamins-product.png" alt="Multivitamin Tablets">
+                    </div>
+
+                    <div class="product-info">
+                        <p>VITAMINS</p>
+                        <h3>Multivitamin Tablets</h3>
+                        <span class="weight">60 TABLETS</span>
+                        <h4>₹599</h4>
+
+                        <button class="add-cart" type="button"
+                            data-name="Multivitamin Tablets" data-price="599">
+                            ADD TO CART +
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 6 -->
+                <article class="product-card" data-category="protein">
+
+                    <div class="product-image">
+                        <img src="supplement.img/whey-isolate.png" alt="Whey Protein Isolate">
+                    </div>
+
+                    <div class="product-info">
+                        <p>PROTEIN</p>
+                        <h3>Whey Protein Isolate</h3>
+                        <span class="weight">1 KG</span>
+                        <h4>₹2,499</h4>
+
+                        <button class="add-cart" type="button"
+                            data-name="Whey Protein Isolate" data-price="2499">
+                            ADD TO CART +
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- SHOWN WHEN SEARCH / FILTER HAS NO MATCHES -->
+            <p class="no-products" id="noProducts" hidden>
+                No products found.
+            </p>
+
+        </section>
+
+
+        <!-- ==============================
+             SHOPPING CART
+        =============================== -->
+        <section class="cart-section" id="cartSection" aria-label="Shopping cart">
+
+            <div class="cart-heading">
+                <h2>YOUR <span>SHOPPING CART</span></h2>
+                <button id="closeCart" type="button" aria-label="Close cart">✕</button>
+            </div>
+
+            <div id="cartItems">
+                <p class="empty-cart">Your cart is empty.</p>
+            </div>
+
+            <div class="cart-total">
+                <h3>Total: <span id="cartTotal">₹0</span></h3>
+               <button type="button" id="checkoutBtn">
+    PROCEED TO CHECKOUT →
+</button>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 WARRIORS Fitness. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

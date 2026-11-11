@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WARRIORS | Gym Equipments</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="equipments.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+            <nav class="navbar" style="gap: 50% ;max-width: 1400px;
+    min-height: 82px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;">
+
+            <a href="index.html" class="logo">
+                <img src="img/image.png" alt="WARRIORS Gym Logo">
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="booking.html">Booking</a>
+                <a href="equipments.html" class="active">Equipments</a>
+                <a href="supplement.html">Supplements</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <a href="booking.html" class="book-btn">
+                <img src="img/calendar (1).png" alt="">
+                <span>Book Now</span>
+            </a>
+              </a>
+            <a href="https://vasanthrajendran256.github.io/calorie-calculator/" class="book-btn" target="_blank">
+                
+                <span>Calculate Calorie</span>
+            </a>
+
+            <div class="toggle" id="toggle">
+                <img src="img/list.png" alt="Menu">
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="equipment-hero">
+
+            <div class="equipment-hero-overlay"></div>
+
+            <div class="equipment-hero-content">
+
+                <p>PREMIUM EQUIPMENTS</p>
+
+                <h1>
+                    TRAIN WITH<br>
+                    <span>THE BEST.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Modern gym equipment to help you build
+                    strength, improve endurance and reach
+                    your fitness goals.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORY SECTION -->
+        <section class="equipment-section">
+
+            <div class="category-container">
+
+                <button class="category-btn active" data-category="all">
+                    <span>🏋️</span>
+                    All Equipments
+                </button>
+
+                <button class="category-btn" data-category="strength">
+                    <span>💪</span>
+                    Strength
+                </button>
+
+                <button class="category-btn" data-category="cardio">
+                    <span>🏃</span>
+                    Cardio
+                </button>
+
+                <button class="category-btn" data-category="functional">
+                    <span>⚡</span>
+                    Functional
+                </button>
+
+                <button class="category-btn" data-category="weight">
+                    <span>🏋️</span>
+                    Weight Training
+                </button>
+
+                <button class="category-btn" data-category="accessories">
+                    <span>🎯</span>
+                    Accessories
+                </button>
+
+            </div>
+
+
+            <!-- EQUIPMENT HEADING -->
+            <div class="equipment-heading">
+                <h2>OUR GYM <span>EQUIPMENTS</span></h2>
+                <div class="heading-line"></div>
+            </div>
+
+
+            <!-- FEATURED EQUIPMENT -->
+            <div class="featured-equipment">
+
+                <img src="equipment.img/power-rack.png" alt="Power Rack">
+
+                <div class="featured-overlay">
+
+                    <p>STRENGTH</p>
+
+                    <h2>POWER RACK</h2>
+
+                    <span>
+                        Build strength with our premium power racks
+                        designed for safe and effective training.
+                    </span>
+
+                   
+
+                </div>
+
+            </div>
+
+
+            <!-- EQUIPMENT GRID -->
+            <div class="equipment-grid" id="equipment-grid">
+
+                <!-- 1 -->
+                <div class="equipment-card" data-category="weight strength">
+
+                    <div class="equipment-image">
+                        <img src="equipment.img/free-weight.png" alt="Free Weights">
+                    </div>
+
+                    <div class="equipment-info">
+                        <div>
+                            <h3>FREE WEIGHTS</h3>
+                            <p>Dumbbells, Barbells & Weight Plates</p>
+                        </div>
+                      
+                    </div>
+
+                </div>
+
+
+                <!-- 2 -->
+                <div class="equipment-card" data-category="strength">
+
+                    <div class="equipment-image">
+                        <img src="equipment.img/benches.png" alt="Gym Benches">
+                    </div>
+
+                    <div class="equipment-info">
+                        <div>
+                            <h3>BENCHES</h3>
+                            <p>Adjustable, Flat & Incline Benches</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+                <!-- 3 -->
+                <div class="equipment-card" data-category="strength functional">
+
+                    <div class="equipment-image">
+                        <img src="equipment.img/cable-machine.png" alt="Cable Machines">
+                    </div>
+
+                    <div class="equipment-info">
+                        <div>
+                            <h3>CABLE MACHINES</h3>
+                            <p>Functional & Versatile Training</p>
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+
+                <!-- 4 -->
+                <div class="equipment-card" data-category="cardio">
+
+                    <div class="equipment-image">
+                        <img src="equipment.img/cardio.png" alt="Cardio Equipment">
+                    </div>
+
+                    <div class="equipment-info">
+                        <div>
+                            <h3>CARDIO EQUIPMENTS</h3>
+                            <p>Treadmills, Bikes, Ellipticals</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+                <!-- 5 -->
+                <div class="equipment-card" data-category="strength">
+
+                    <div class="equipment-image">
+                        <img src="equipment.img/strength-machines.png" alt="Strength Machines">
+                    </div>
+
+                    <div class="equipment-info">
+                        <div>
+                            <h3>STRENGTH MACHINES</h3>
+                            <p>Target Every Muscle Group</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+                <!-- 6 -->
+                <div class="equipment-card" data-category="functional">
+
+                    <div class="equipment-image">
+                        <img src="equipment.img/functional.png" alt="Functional Training">
+                    </div>
+
+                    <div class="equipment-info">
+                        <div>
+                            <h3>FUNCTIONAL TRAINING</h3>
+                            <p>Kettlebells, Battle Ropes, Plyo Boxes</p>
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+
+                <!-- 7 -->
+                <div class="equipment-card" data-category="weight">
+
+                    <div class="equipment-image">
+                        <img src="equipment.img/weight-plates.png" alt="Weight Plates">
+                    </div>
+
+                    <div class="equipment-info">
+                        <div>
+                            <h3>WEIGHT PLATES</h3>
+                            <p>Olympic Plates & Bumper Plates</p>
+                        </div>
+                       
+                    </div>
+
+                </div>
+
+
+                <!-- 8 -->
+                <div class="equipment-card" data-category="weight strength">
+
+                    <div class="equipment-image">
+                        <img src="equipment.img/barbells.png" alt="Barbells">
+                    </div>
+
+                    <div class="equipment-info">
+                        <div>
+                            <h3>BARBELLS</h3>
+                            <p>Olympic & EZ Bars</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+                <!-- 9 -->
+                <div class="equipment-card" data-category="accessories">
+
+                    <div class="equipment-image">
+                        <img src="equipment.img/accessories.png" alt="Gym Accessories">
+                    </div>
+
+                    <div class="equipment-info">
+                        <div>
+                            <h3>ACCESSORIES</h3>
+                            <p>Bands, Belts, Rollers & More</p>
+                        </div>
+                       
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p class="no-results" id="noResults">
+                No equipment found in this category.
+            </p>
+
+        </section>
+
+
+        <!-- BOTTOM BANNER -->
+        <section class="equipment-banner">
+
+            <div class="banner-content">
+
+                <p>TRAIN HARDER. GET STRONGER.</p>
+
+                <h2>
+                    WORLD CLASS EQUIPMENTS<br>
+                    FOR A <span>STRONGER YOU.</span>
+                </h2>
+
+                <p>
+                    Train with modern, high-quality equipment
+                    in a motivating environment.
+                </p>
+
+                <a href="booking.html" class="equipment-btn">
+                    Book Your Session →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
