@@ -123,8 +123,8 @@ header {
     }
 
     .toggle img {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 
     .nav-links {
@@ -608,6 +608,7 @@ header {
     .trainer-card > img {
         height: 300px;
     }
+    
 }
 
 
@@ -1086,4 +1087,41 @@ footer {
     .stats p {
         max-width: 90px;
     }
+}
+.calorie{
+    display: none;
+
+}
+@media (max-width: 650px){
+    .but{
+        margin: 0px;
+        padding: 10px 0px 10px 0px;
+        align-items: center;
+       justify-content: center;
+       text-align: center;
+       /* border: 2px solid white; */
+       
+    }
+    .calorie{
+        display: contents;
+      
+       
+    }
+    .calorie h2{
+       color: #090909;
+       font-size: medium;
+    }
+    p{
+        color: #a3aaae;
+    }
+    .calorie a{
+        text-decoration: none;
+    }
+    button{
+        background-color: #b5f34d;
+        border: 2px solid rgb(10, 0, 0);
+        border-radius: 20px;
+        padding: 5px 20px;
+    }
+   
 }
